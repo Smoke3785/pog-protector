@@ -1,4 +1,4 @@
-# pog-protector
+# Pog Protector
 The pogchamp emote was removed by Twitch on January 15, 2020, much to the disappointment of many community members. Pog Protector replaces the classic emote on Twitch.tv in just one click.
 
 [GitHub](https://github.com/Smoke3785/pog-protector) **|** [View on Website](https://owenrossikeen.com/projects/pogprotector) **|** [Donate](https://owenrossikeen.com/donate)
