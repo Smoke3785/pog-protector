@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Pog Protector</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- <script src="popup.js"></script> -->
+    <style>
+      body {
+        width: 200px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        background-color: #0E0E10;
+        font-family: 'Roboto', sans-serif;
+      }
+      .titleDiv {
+        width: 100%;
+        height: 20%;
+        background-color: #18171C;
+        display: flex;
+        flex-direction: row;
+        border-radius: 9px;
+      }
+      .mainDiv {
+        width: 90%;
+        height: 70%;
+        background-color: #18171C;
+        margin: 5% 0 5% 0;
+        border-radius: 9px;
+        padding: 0px 10px;
+      }
+      .footerDiv {
+        width: 100%;
+        height: 10%;
+        background-color: none;
+        display: flex;
+        flex-direction: row;
+      }
+      .ppTitle {
+        width: 100%;
+        height: 50%;
+        margin: 0 0 0 20px;
+        color: #6441a5;
+        transform: translate(0, 4px);
+      }
+      .ppTitle:nth-child(2) {
+        transform: translate(0, -4px)!important;
+        color: #f0f0f0;
+        font-weight: 300;
+      }
+      .pogLogo {
+        width: 40%;
+        height: 90%;
+        transform: translate(0, 0);
+      }
+      .wordContainer {
+        width: 60%;
+        height: 100%;
+
+      }
+      
+      /* .contContainer {
+
+      } */
+
+
+
+
+
+
+      /* THIS CODE HANDLES THE TOGGLE BUTTON. MUCH THANKS TO USER HIMALAYA SINGH ON CODEPEN */
+        /* Button 3 */
+      #button-3 .knobs:before
+      {
+          content: 'ON';
+          position: absolute;
+          top: 4px;
+          left: 4px;
+          width: 20px;
+          height: 10px;
+          color: #fff;
+          font-size: 10px;
+          font-weight: bold;
+          text-align: center;
+          line-height: 1;
+          padding: 9px 4px;
+          background-color: #6441a5;
+          border-radius: 50%;
+          transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+      }
+
+      #button-3 .checkbox:active + .knobs:before
+      {
+          width: 46px;
+          border-radius: 100px;
+      }
+
+      #button-3 .checkbox:checked:active + .knobs:before
+      {
+          margin-left: -26px;
+      }
+
+      #button-3 .checkbox:checked + .knobs:before
+      {
+          content: 'OFF';
+          left: 42px;
+          color: #6441a5;
+          background-color: #f0f0f0;
+      }
+
+      #button-3 .checkbox:checked ~ .layer
+      {
+          border: 3px solid #f0f0f0;
+      }
+      /* CSS rules are kept repetitive so that you can get CSS rules for each button easily :) */
+
+      *
+      {
+          user-select: none;
+          -webkit-tap-highlight-color:transparent;
+      }
+
+      *:focus
+      {
+          outline: none;
+      }
+
+      .toggle-button-cover
+      {
+          display: table-cell;
+          position: relative;
+          width: 200px;
+          height: 140px;
+          box-sizing: border-box;
+      }
+
+      .button-cover
+      {
+          height: 100px;
+          margin: 20px;
+          background-color: #fff;
+          box-shadow: 0 10px 20px -8px #6441a5;
+          border-radius: 4px;
+      }
+
+      .button-cover:before
+      {
+          counter-increment: button-counter;
+          content: counter(button-counter);
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          color: #d7e3e3;
+          font-size: 12px;
+          line-height: 1;
+          padding: 5px;
+      }
+
+      .button-cover, .knobs, .layer
+      {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+      }
+
+      .button
+      {
+          position: relative;
+          top: 50%;
+          width: 74px;
+          height: 36px;
+          margin: -20px auto 0 auto;
+          overflow: hidden;
+      }
+
+      .button.r, .button.r .layer
+      {
+          border-radius: 100px;
+      }
+
+      .button.b2
+      {
+          border-radius: 2px;
+      }
+
+      .checkbox
+      {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          padding: 0;
+          margin: 0;
+          opacity: 0;
+          cursor: pointer;
+          z-index: 3;
+      }
+
+      .knobs
+      {
+          z-index: 2;
+      }
+
+      .layer
+      {
+          /* width: 100%; */
+          border: 3px solid #6441a5;
+          transition: 0.3s ease all;
+          z-index: 1;
+      }
+      .textContMain {
+        font-size: 12px;
+        color: #f0f0f0;
+        word-break: normal;
+      }
+      .textContMain2 {
+        font-size: 12px;
+        color: #f0f0f0;
+        word-break: normal;
+        transform: translate(0, 30px);
+      }
+      .needaMove {
+        transform: translate(0, -70px);
+      }
+      .containerFoot {
+        width: 50%;
+        height: 100%;
+      }
+      .containerFoot > a {
+        color: #6441a5;
+      }
+      .attWeb {
+        text-align: right!important;
+        justify-content: right;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="titleDiv">
+      <div class="wordContainer">
+        <h1 class="ppTitle">Pog</h1>
+        <h1 class="ppTitle">Protector</h1>
+      </div>
+      <img src="https://cdn.iliad.dev/public/production/owenrossikeen/Images/projects/pogprotector/pogChamp.png" alt="" class="pogLogo">
+    </div>
+    <div class="mainDiv">
+
+        <p class="textContMain">Pog Protector will replace Twitch's rotation of PogChamp emojis with their classic counterpart. The extension will function so long as it is enabled: </p>
+        <div class="button r needaMove" id="button-3">
+          <input type="checkbox" id="toggle" class="checkbox">
+          <div class="knobs"></div>
+          <div class="layer"></div>
+        </div>
+        <p class="textContMain2">Changes may require page reload to apply.</p>
+    </div>
+    <div class="footerDiv">
+      <div class="containerFoot"><a target="_blank" href="https://twitch.tv/Smoke3785">Developed by Smoke3785</a></div>
+      <div class="containerFoot"><a target="_blank" href="https://www.owenrossikeen.com/projects/pogprotector" class="attWeb">See my work or donate</a></div>
+    </div>
+  </body>
+  <script src="popup.js"></script>
+</html>

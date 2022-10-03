@@ -1,0 +1,23 @@
+[alt~="PogChamp"] {
+  content: url("https://cdn.iliad.dev/public/production/owenrossikeen/Images/projects/pogprotector/pogChamp.png") !important;
+}
+[srcset='//static-cdn.jtvnw.net/emoticons/v1/305504416/1.0 1x, //static-cdn.jtvnw.net/emoticons/v1/305504416/2.0 2x']
+{
+  content: url("https://cdn.iliad.dev/public/production/owenrossikeen/Images/projects/pogprotector/pogChamp.png") !important;
+}
+/* LIST OF SPECIAL FOLKS WHO GET A SPECIAL NAME COLOR */
+span[data-a-user~="smoke3785"] {
+  color: white !important;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #18171c, 1px -1px 0 #18171c,
+    -1px -1px 0 #18171c !important;
+}
+span[data-a-user~="nx_luck_"] {
+  color: white !important;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #18171c, 1px -1px 0 #18171c,
+    -1px -1px 0 #18171c !important;
+}
+span[data-a-user~="luckyduck4l1f3"] {
+  color: white !important;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #18171c, 1px -1px 0 #18171c,
+    -1px -1px 0 #18171c !important;
+}
